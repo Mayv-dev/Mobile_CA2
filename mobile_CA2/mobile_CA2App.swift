@@ -11,7 +11,7 @@ import SwiftUI
 struct mobile_CA2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(question: Question.allQuestions[0])
         }
     }
 }
