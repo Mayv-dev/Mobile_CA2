@@ -5,54 +5,53 @@
 //  Created by Student on 07/03/2025.
 //
 
+// Video refrence for the quiz
+// https://www.youtube.com/live/mFT21IzGW1w?feature=shared
+// https://www.youtube.com/live/r1C8HK5_hsc?feature=shared
+// 
+
 import SwiftUI
 
 struct Quiz: View {
+    @StateObject var viewModel = GameViewModel()
+    
     let question: Question
-    
-   @State var guessedIndex: Int? = nil
-
     var body: some View {
-     ZStack {
-        VStack {
-            Text("Quiz")
-                .font(.largeTitle)
-            Text("Question 1 / 4")
-                .padding()
-        Spacer()
-            Text(question.questionText)
-            .font(.title)
-            .multilineTextAlignment(.center)
-            .padding(.all)
-        Spacer()
-        Spacer()
-        HStack {
-            ForEach(0..<question.possibleAnswers.count, id: \.self) { index in
-            AnswerButton(text: question.possibleAnswers[index])
-            {
-                guessedIndex = index
-                print("Button \(index) tapped")
-            }
-            .background(colorForButton(at: index))
-            .disabled(guessedIndex != nil)
+        ZStack {
+            VStack {
+                Text("Quiz")
+                    .font(.largeTitle)
+                Text(viewModel.progressText)
+                    .padding()
+                Spacer()
+                Text(viewModel.questionText)
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .padding(.all)
+                Spacer()
+                Spacer()
+                HStack {
+                    ForEach(viewModel.answerIndices) {index in
+                        AnswerButton(text: viewModel.answerText(for: index)){
+                            viewModel.makeGuessForCurrentQuestion(at: index)
+                        }
+                        .background(viewModel.colorForButton(at: index))
+                        .disabled(viewModel.guessWasMade)
                     }
-                 }
-                 if guessedIndex != nil {
-                 BottomText(str: "Next")
-                 }
-            }
-        }
-     }
-    
-    func colorForButton(at buttonIndex: Int) -> Color {
-      guard let guessedIndex = guessedIndex, guessedIndex == buttonIndex else { return .white}
-        if guessedIndex == question.correctAnswerIndex {
-            return .green
-        } else {
-            return .red
+                }
+                if viewModel.guessWasMade {
+                    Button(action: {
+                        viewModel.advanceGameState()
+                    }) {
+                        
+                        Text("Next")
+                    }
+                    .padding()
+                    .border(Color.black, width: 4)
+                }
+            }.padding(.bottom)
         }
     }
-
 }
    
 
