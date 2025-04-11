@@ -26,6 +26,7 @@ struct ContentView: View {
                          NavigationLink("UN Goals"){UNGoals()}.padding(20)
                          NavigationLink("Causes of Poverty"){CausesOfPoverty()}.padding(20)
                          NavigationLink("Progress & Challenges"){Progress_Challenges()}.padding(20)
+                         NavigationLink("Country Comparison"){MapView()}.padding(20)
                          NavigationLink("Quiz"){Quiz(question: Question.allQuestions[0])}.padding(20)
                     }
                      .navigationTitle("Poverty Indicatorys")
