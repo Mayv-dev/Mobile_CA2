@@ -11,12 +11,12 @@ struct BottomText: View {
     let str: String
 
     var body: some View {
-        HStack{
+        HStack {
             Spacer()
             Text(str)
                 .font(.body)
                 .fontWeight(.bold)
-                
+
             Spacer()
         }.background(Color.blue.opacity(0.5))
     }

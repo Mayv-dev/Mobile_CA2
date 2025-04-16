@@ -17,7 +17,9 @@ func loadJSON<T: Decodable>(_ filename: String, as type: T.Type) -> T? {
         } catch {
             print("Error loading or decoding JSON: \(error)")
         }
-    } else if let url = Bundle.main.url(forResource: filename, withExtension: "txt") {
+    } else if let url = Bundle.main.url(
+        forResource: filename, withExtension: "txt")
+    {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()

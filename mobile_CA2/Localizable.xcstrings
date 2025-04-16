@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%@" : {
-
-    },
     "$1.90" : {
       "comment" : "Option C",
       "localizations" : {
@@ -224,9 +221,6 @@
     "Goal %@" : {
 
     },
-    "Grade %@" : {
-
-    },
     "Grade:" : {
       "localizations" : {
         "fr" : {
@@ -325,9 +319,6 @@
         }
       }
     },
-    "Login" : {
-
-    },
     "Next" : {
       "localizations" : {
         "fr" : {
@@ -371,9 +362,6 @@
         }
       }
     },
-    "Password" : {
-
-    },
     "Poverty Indicatorys" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -385,7 +373,11 @@
         }
       }
     },
+    "Progress" : {
+
+    },
     "Progress & Challanges" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -470,12 +462,6 @@
         }
       }
     },
-    "Score %lld" : {
-
-    },
-    "Scores" : {
-
-    },
     "Some poverty" : {
       "comment" : "Option C",
       "localizations" : {
@@ -509,6 +495,7 @@
       }
     },
     "Statstics" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -528,9 +515,6 @@
           }
         }
       }
-    },
-    "Time %@" : {
-
     },
     "Total time: %@" : {
       "localizations" : {
@@ -572,9 +556,6 @@
           }
         }
       }
-    },
-    "Username" : {
-
     },
     "What daily income defines extreme poverty?" : {
       "extractionState" : "manual",
@@ -653,7 +634,11 @@
         }
       }
     },
+    "You're in: %@" : {
+
+    },
     "Your in:" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
