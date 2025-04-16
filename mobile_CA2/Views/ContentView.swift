@@ -35,6 +35,9 @@ struct ContentView: View {
                }
             }
       
+func notify() {
+    
+}
 
 #Preview {
     ContentView()
