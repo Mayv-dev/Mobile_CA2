@@ -34,7 +34,9 @@ func scheduleNotification(title: String, body: String) async {
     
     var dateComponents = DateComponents()
     dateComponents.calendar = Calendar.current
-    dateComponents.minute = dateComponents.minute! + 1
+    dateComponents.hour = Calendar.current.component(.hour, from: Date())
+    dateComponents.minute = Calendar.current.component(.minute, from: Date())
+    dateComponents.second = Calendar.current.component(.second, from:   Date()) + 5
     
     let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
     
