@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ResultsView: View {
+    let context: ModelContext
     let viewModel: ResultsViewModel
     
     var body: some View {
@@ -35,7 +37,7 @@ struct ResultsView: View {
                     .font(.system(size:30))
                 Spacer()
                 NavigationLink (
-                    destination: Quiz(question: Question.allQuestions[0]),
+                    destination: Quiz(context: context, question: Question.allQuestions[0]),
                     label: { BottomText(str: NSLocalizedString("Retake Quiz", comment: "Button to restart quiz"))
                     })
                 .padding(.vertical)
@@ -48,13 +50,21 @@ struct ResultsView: View {
             }
         }
         .navigationBarHidden(true)
+        .task {
+            let newScore = Score(
+                grade: viewModel.letterGradeText,
+                gameScore: viewModel.score,
+                gameTime: viewModel.totalGameTimeText,
+                date: Date()
+            )
+            context.insert(newScore)
+        }
     }
     
 }
 
 #Preview {
     NavigationView{
-        ResultsView(viewModel: ResultsViewModel(selectionCount: (8,2),gameStartTime: Date(), gameEndTime: Date()) )
     }
 
 }

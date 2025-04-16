@@ -16,6 +16,7 @@ import SwiftData
 struct Quiz: View {
     @StateObject var viewModel = GameViewModel()
     
+    let context: ModelContext
     let question: Question
     var body: some View {
         ZStack {
@@ -57,6 +58,7 @@ struct Quiz: View {
     }
     private var resultsNavigationView: some View {
         NavigationLink(destination: ResultsView(
+            context: context,
             viewModel: ResultsViewModel(
                 selectionCount: viewModel.selectionCount ,
                 gameStartTime: viewModel.gameStartTime,
