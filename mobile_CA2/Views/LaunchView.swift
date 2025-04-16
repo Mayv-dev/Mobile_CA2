@@ -11,12 +11,14 @@ struct LaunchView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(Color(red: 236/255.0,green: 28/255.0,blue:45/255.0))
+                .fill(
+                    Color(red: 236 / 255.0, green: 28 / 255.0, blue: 45 / 255.0)
+                )
                 .ignoresSafeArea()
             Image("logo")
-               .resizable()
+                .resizable()
                 .aspectRatio(contentMode: .fit)
-               
+
         }
 
     }
