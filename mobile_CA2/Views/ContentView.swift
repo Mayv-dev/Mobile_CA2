@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import UIKit
+import CoreLocation
 
 struct ContentView: View {
-    
+
     var body: some View{
         ZStack {
             Rectangle()
@@ -26,6 +28,7 @@ struct ContentView: View {
                          NavigationLink("UN Goals"){UNGoals()}.padding(20)
                          NavigationLink("Causes of Poverty"){CausesOfPoverty()}.padding(20)
                          NavigationLink("Progress & Challenges"){Progress_Challenges()}.padding(20)
+                         NavigationLink("Country Comparison"){MapView()}.padding(20)
                          NavigationLink("Quiz"){Quiz(question: Question.allQuestions[0])}.padding(20)
                     }
                      .navigationTitle("Poverty Indicatorys")
@@ -35,10 +38,6 @@ struct ContentView: View {
                }
             }
       
-func notify() {
-    
-}
-
 #Preview {
     ContentView()
 }
