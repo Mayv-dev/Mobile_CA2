@@ -25,7 +25,7 @@ class GameViewModel: ObservableObject {
     }
     
     var progressText: String {
-        "Question \(game.currentQuestionIndex + 1) / \(game.questionCount)"
+        String(format: NSLocalizedString("Question %d / %d", comment: "Current Question"), game.currentQuestionIndex + 1, game.questionCount)
     }
     
     var guessWasMade: Bool {

@@ -1,74 +1,643 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%@" : {
-
+    "$1.90" : {
+      "comment" : "Option C",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€1.67"
+          }
+        }
+      }
+    },
+    "$2.15" : {
+      "comment" : "Option B - Correct",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€1.89"
+          }
+        }
+      }
+    },
+    "$2.50" : {
+      "comment" : "Option A",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€2.20"
+          }
+        }
+      }
+    },
+    "$3.50" : {
+      "comment" : "Option D",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "€3.08"
+          }
+        }
+      }
+    },
+    "200mil" : {
+      "comment" : "Option B",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "200mil"
+          }
+        }
+      }
+    },
+    "400mil" : {
+      "comment" : "Option D",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "400mil"
+          }
+        }
+      }
+    },
+    "700mil" : {
+      "comment" : "Option A - Correct",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "700mil"
+          }
+        }
+      }
+    },
+    "900mil" : {
+      "comment" : "Option C",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "900mil"
+          }
+        }
+      }
+    },
+    "2030" : {
+      "comment" : "Option B - Correct",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2030"
+          }
+        }
+      }
+    },
+    "2040" : {
+      "comment" : "Option D",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2040"
+          }
+        }
+      }
+    },
+    "2065" : {
+      "comment" : "Option C",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2065"
+          }
+        }
+      }
+    },
+    "2090" : {
+      "comment" : "Option A",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2090"
+          }
+        }
+      }
+    },
+    "Africa" : {
+      "comment" : "Option C - Correct",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afrique"
+          }
+        }
+      }
+    },
+    "Asia" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asie"
+          }
+        }
+      }
     },
     "Causes of Poverty" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Causes de la pauvreté"
+          }
+        }
+      }
     },
     "Country Comparison" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comparaison des pays"
+          }
+        }
+      }
+    },
+    "Eliminate it completely" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éliminez-le complètement"
+          }
+        }
+      }
+    },
+    "Europe" : {
+      "comment" : "Option A",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Europe"
+          }
+        }
+      }
+    },
+    "Exit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sortie"
+          }
+        }
+      }
     },
     "Final Score: " : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score final"
+          }
+        }
+      }
     },
-    "Grade %@" : {
+    "Goal %@" : {
 
     },
     "Grade:" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grade"
+          }
+        }
+      }
     },
-    "Login" : {
-
+    "How many million people live in extreme poverty?" : {
+      "comment" : "Question 5",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Combien de millions de personnes vivent dans l’extrême pauvreté ?"
+          }
+        }
+      }
+    },
+    "Improving education" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Améliorer l’éducation"
+          }
+        }
+      }
+    },
+    "Improving healthcare" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Améliorer les soins de santé"
+          }
+        }
+      }
+    },
+    "Increasing employment" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer de l’emploi"
+          }
+        }
+      }
+    },
+    "Increasing tax" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Augmenter les impôts"
+          }
+        }
+      }
+    },
+    "Keep it the same" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gardez-le pareil"
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clé"
+          }
+        }
+      }
+    },
+    "Key 1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clé 1"
+          }
+        }
+      }
     },
     "Next" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivante"
+          }
+        }
+      }
     },
-    "Password" : {
-
+    "No Change" : {
+      "comment" : "Option B",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun changement"
+          }
+        }
+      }
+    },
+    "No poverty" : {
+      "comment" : "Option D - Correct",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas de auvrete"
+          }
+        }
+      }
+    },
+    "password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mot de passe"
+          }
+        }
+      }
     },
     "Poverty Indicatorys" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indicateurs de pauvreté"
+          }
+        }
+      }
     },
     "Progress & Challanges" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progrès et défis"
+          }
+        }
+      }
     },
     "Progress & Challenges" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progrès et défis"
+          }
+        }
+      }
+    },
+    "Question %d / %d" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question %d sur %d"
+          }
+        }
+      }
     },
     "Quiz" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questionnaire"
+          }
+        }
+      }
     },
-    "Score %lld" : {
-
+    "Reduce it by 25%" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réduisez-le de 25 %"
+          }
+        }
+      }
     },
-    "Scores" : {
-
+    "Reduce it by 50%" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réduisez-le de 50 %"
+          }
+        }
+      }
+    },
+    "Reduce poverty" : {
+      "comment" : "Option A",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réduire la pauvreté"
+          }
+        }
+      }
+    },
+    "Retake Quiz" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reprendre le quiz"
+          }
+        }
+      }
+    },
+    "Some poverty" : {
+      "comment" : "Option C",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une certaine pauvreté"
+          }
+        }
+      }
+    },
+    "South America" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amérique du Sud"
+          }
+        }
+      }
     },
     "Statistics" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistiques"
+          }
+        }
+      }
     },
     "Statstics" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistiques"
+          }
+        }
+      }
     },
-    "Time %@" : {
-
+    "Sub-Saharan Africa" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afrique subsaharienne"
+          }
+        }
+      }
     },
     "Total time: %@" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "temps total"
+          }
+        }
+      }
     },
     "UN Goals" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectifs de l'ONU"
+          }
+        }
+      }
     },
     "Unicef Poverty" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pauvreté de l'Unicef"
+          }
+        }
+      }
     },
-    "Username" : {
-
+    "username" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nom d'utilisateur"
+          }
+        }
+      }
+    },
+    "What daily income defines extreme poverty?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel revenu quotidien définit l’extrême pauvreté ?"
+          }
+        }
+      }
+    },
+    "What is a key strategy for ending poverty? " : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle est la stratégie clé pour mettre fin à la pauvreté ?"
+          }
+        }
+      }
+    },
+    "What is considered the international poverty line (living on less than)?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le seuil de pauvreté international (vivre avec moins de) ?"
+          }
+        }
+      }
+    },
+    "What is the Goal" : {
+      "comment" : "Question 4",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est le but"
+          }
+        }
+      }
+    },
+    "What is UN's goal for ending poverty?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel est l’objectif de l’ONU pour mettre fin à la pauvreté ?"
+          }
+        }
+      }
+    },
+    "What region has the highest poverty rate?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle région a le taux de pauvreté le plus élevé ?"
+          }
+        }
+      }
+    },
+    "What year does the UN aim to end poverty ?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En quelle année l’ONU vise-t-elle à mettre fin à la pauvreté ?"
+          }
+        }
+      }
     },
     "Your in:" : {
-
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre entrée"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

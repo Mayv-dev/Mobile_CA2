@@ -1,0 +1,27 @@
+ [
+    {
+      "stat_id": 1,
+      "title": "Extreme Poverty Rate",
+      "value": "8.4%",
+      "description": "As of 2023, about 8.4% of the world’s population lives on less than $2.15 a day."
+    },
+    {
+      "stat_id": 2,
+      "title": "Children in Poverty",
+      "value": "1 in 6",
+      "description": "One in six children globally lives in extreme poverty."
+    },
+    {
+      "stat_id": 3,
+      "title": "Working Poor",
+      "value": "7.5%",
+      "description": "Around 7.5% of workers live below the poverty line despite being employed."
+    },
+    {
+      "stat_id": 4,
+      "title": "Poverty in Sub-Saharan Africa",
+      "value": "35%",
+      "description": "Sub-Saharan Africa has the highest regional poverty rate."
+    }
+  ]
+

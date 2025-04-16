@@ -38,10 +38,10 @@ struct ResultsViewModel {
     }
     
     var totalGameTimeText: String {
-        "\(gameEndTime.timeIntervalSince(gameStartTime).rounded()) "
+        "\(gameEndTime.timeIntervalSince(gameStartTime)) "
     }
     
-    var score: Int {
+    private var score: Int {
         selectionCount.correct * 100 / (selectionCount.correct + selectionCount.incorrect)
     }
 }
