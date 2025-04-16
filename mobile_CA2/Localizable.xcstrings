@@ -1,7 +1,75 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
 
+    },
+    "Causes of Poverty" : {
+
+    },
+    "Country Comparison" : {
+
+    },
+    "Final Score: " : {
+
+    },
+    "Grade %@" : {
+
+    },
+    "Grade:" : {
+
+    },
+    "Login" : {
+
+    },
+    "Next" : {
+
+    },
+    "Password" : {
+
+    },
+    "Poverty Indicatorys" : {
+
+    },
+    "Progress & Challanges" : {
+
+    },
+    "Progress & Challenges" : {
+
+    },
+    "Quiz" : {
+
+    },
+    "Score %lld" : {
+
+    },
+    "Scores" : {
+
+    },
+    "Statistics" : {
+
+    },
+    "Statstics" : {
+
+    },
+    "Time %@" : {
+
+    },
+    "Total time: %@" : {
+
+    },
+    "UN Goals" : {
+
+    },
+    "Unicef Poverty" : {
+
+    },
+    "Username" : {
+
+    },
+    "Your in:" : {
+
+    }
   },
   "version" : "1.0"
 }

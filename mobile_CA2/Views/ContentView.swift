@@ -8,9 +8,11 @@
 import CoreLocation
 import SwiftUI
 import UIKit
+import SwiftData
 
 struct ContentView: View {
-
+    @Environment(\.modelContext) var context
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -37,7 +39,10 @@ struct ContentView: View {
                         NavigationLink("Country Comparison") { MapView() }
                             .padding(20)
                         NavigationLink("Quiz") {
-                            Quiz(question: Question.allQuestions[0])
+                            Quiz(context: context, question: Question.allQuestions[0])
+                        }.padding(20)
+                        NavigationLink("Scores") {
+                            ScoreView()
                         }.padding(20)
                     }
                     .navigationTitle("Poverty Indicatorys")
