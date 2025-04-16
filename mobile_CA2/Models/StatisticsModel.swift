@@ -1,5 +1,5 @@
 //
-//  CausesOfPovertyModel.swift
+//  StatisticsModel.swift
 //  mobile_CA2
 //
 //  Created by Student on 16/04/2025.
@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Cause: Codable, Identifiable {
+struct Info: Codable, Identifiable {
     let id: Int
     let title: String
+    let value: String
     let description: String
 }
 
-struct CausesData: Codable {
-    let causesOfPoverty: [Cause]
+struct StatsData: Codable {
+    let causesOfPoverty: [Info]
 }

@@ -18,9 +18,7 @@ struct LaunchView: View {
             Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-
         }
-
     }
 }
 #Preview {

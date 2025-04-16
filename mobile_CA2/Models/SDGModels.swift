@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SDGGoal: Codable{
+struct SDGGoal: Codable {
     let code: String
     let title: String
     let description: String
@@ -23,7 +23,7 @@ struct Target: Codable {
     let indicators: [Indicator]?
 }
 
-struct Indicator: Codable{
+struct Indicator: Codable {
     let code: String
     let description: String
     let uri: String
