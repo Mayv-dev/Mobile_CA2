@@ -9,18 +9,33 @@ import SwiftUI
 
 struct UNGoals: View {
     @State private var sdgGoals: [SDGGoal] = []
-
+    @State private var selGoal: SDGGoal? = nil
+    
     var body: some View {
-        List(sdgGoals, id: \.code) { goal in
-            Section(header: Text("Goal \(goal.code)").bold()) {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(goal.title).font(.headline)
-                    Text(goal.description).font(.subheadline).foregroundColor(.gray)
+        VStack {
+            if selGoal == nil {
+                List(sdgGoals, id: \.code) { goal in
+                    Section(header: Text("Goal \(goal.code)").bold()) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(goal.title).font(.headline)
+                            Text(goal.description).font(.subheadline).foregroundColor(.gray)
+                        }
+                    }.onTapGesture(count: 2) {_ in
+                        selGoal = goal
+                    }
+                }
+                .navigationTitle("UN Goals")
+            } else {
+                Section(header: Text("Goal \(selGoal?.code ?? "")").bold()) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(selGoal?.title ?? "").font(.headline)
+                        Text(selGoal?.description ?? "").font(.subheadline).foregroundColor(.gray)
+                    }
+                }.onTapGesture(count: 2) {_ in
+                    selGoal = nil
                 }
             }
-        }
-        .navigationTitle("UN Goals")
-        .onAppear {
+        }.onAppear(){
             fetchGoals()
         }
     }
