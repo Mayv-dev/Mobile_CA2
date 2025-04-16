@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Progress - Decline in Global Poverty",
+      "description": "Global poverty has declined over the past decades due to economic growth and social programs."
+    },
+    {
+      "id": 2,
+      "title": "Challenge - COVID-19 Pandemic",
+      "description": "The pandemic pushed over 70 million people into extreme poverty, reversing years of progress."
+    },
+    {
+      "id": 3,
+      "title": "Progress - Increased Access to Education",
+      "description": "Education enrollment rates have risen, contributing to reduced poverty rates in some regions."
+    },
+    {
+      "id": 4,
+      "title": "Challenge - Rising Inequality",
+      "description": "Despite growth, income inequality continues to limit poverty reduction in many areas."
+    },
+    {
+      "id": 5,
+      "title": "Challenge - Climate Impact",
+      "description": "Climate disasters are increasing in frequency and impact, especially in low-income countries."
+    }
+  ]

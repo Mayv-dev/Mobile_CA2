@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
-
 struct CausesOfPoverty: View {
+    @State private var causes: [Cause] = []
+
     var body: some View {
-        Text("Causes of Poverty")
+        List(causes, id: \.id) { cause in
+            VStack(alignment: .leading) {
+                Text(cause.title)
+                    .font(.headline)
+                Text(cause.description)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            .padding(.vertical)
+        }
+        .onAppear {
+            loadCauses()
+        }
+        .navigationTitle("Causes of Poverty")
+    }
+
+    private func loadCauses() {
+        if let causesData: [Cause] = loadJSON("PovertyCauses", as: [Cause].self) {
+            causes = causesData
+        } else {
+            print("🚨 Failed to load data.")
+        }
     }
 }
 
