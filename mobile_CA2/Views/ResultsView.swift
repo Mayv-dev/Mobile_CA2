@@ -5,55 +5,62 @@
 //  Created by Student on 28/03/2025.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ResultsView: View {
+    let context: ModelContext
     let viewModel: ResultsViewModel
-    
+
     var body: some View {
         ZStack {
-            
-            VStack{
+
+            VStack {
                 Spacer()
-                HStack{
-                    Text ("Final Score: ")
-                    Text (viewModel.finalPercentText)
+                HStack {
+                    Text("Final Score: ")
+                    Text(viewModel.finalPercentText)
                 }
                 .font(.title)
                 .padding()
-                HStack{
-                    Text ("Grade:")
-                    Text (viewModel.letterGradeText)
+                HStack {
+                    Text("Grade:")
+                    Text(viewModel.letterGradeText)
                         .padding()
                         .font(.title)
                 }
                 Text("Total time: \(viewModel.totalGameTimeText)")
                 Spacer()
                 Text(viewModel.CorrectGuesses)
-                    .font(.system(size:30))
+                    .font(.system(size: 30))
                 Text(viewModel.WrongGuesses)
-                    .font(.system(size:30))
+                    .font(.system(size: 30))
                 Spacer()
-                NavigationLink (
-                    destination: Quiz(question: Question.allQuestions[0]),
-                    label: { BottomText(str: "Retake Quiz")
-                    })
+                NavigationLink(
+                    destination: Quiz(context: context, question: Question.allQuestions[0]),
+                    label: {
+                        BottomText(str: "Retake Quiz")
+                    }
+                )
                 .padding(.vertical)
-                
-                NavigationLink (
+
+                NavigationLink(
                     destination: ContentView(),
-                    label: { BottomText(str: "Exit")
+                    label: {
+                        BottomText(str: "Exit")
                     })
             }
         }
-        .navigationBarHidden(true)
+        .task {
+            let newScore = Score(
+                grade: viewModel.letterGradeText,
+                gameScore: viewModel.score,
+                gameTime: viewModel.totalGameTimeText,
+                date: Date())
+            context.insert(newScore)
+        }.navigationBarHidden(true)
     }
-    
+
 }
 
-#Preview {
-    NavigationView{
-        ResultsView(viewModel: ResultsViewModel(selectionCount: (8,2),gameStartTime: Date(), gameEndTime: Date()) )
-    }
-
-}
+#Preview {}
