@@ -9,8 +9,10 @@ import SwiftUI
 
 struct UNGoals: View {
     @State private var sdgGoals: [SDGGoal] = []
+    @State private var selGoal: SDGGoal? = nil
 
     var body: some View {
+
         ZStack {
             Rectangle()
                 .fill(
@@ -24,21 +26,35 @@ struct UNGoals: View {
                     .bold()
                     .font(.title)
                     .colorInvert()
-
-                List(sdgGoals, id: \.code) { goal in
-                    Section(header: Text("Goal \(goal.code)").bold()) {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(goal.title).font(.headline)
-                            Text(goal.description).font(.subheadline)
-                                .foregroundColor(.gray)
+                if selGoal == nil {
+                    List(sdgGoals, id: \.code) { goal in
+                        Section(header: Text("Goal \(goal.code)").bold()) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(goal.title).font(.headline)
+                                Text(goal.description).font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                        }.onTapGesture(count: 2) { _ in
+                            selGoal = goal
                         }
                     }
+                } else {
+                    Section(header: Text("Goal \(selGoal?.code ?? "")").bold())
+                    {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(selGoal?.title ?? "").font(.headline)
+                            Text(selGoal?.description ?? "").font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }.background(Color.white)
+                    .onTapGesture(count: 2) { _ in
+                        selGoal = nil
+                    }
                 }
-                .navigationTitle("UN Goals")
+            }.navigationTitle("UN Goals")
                 .onAppear {
                     fetchGoals()
                 }
-            }
         }
     }
 
@@ -52,7 +68,6 @@ struct UNGoals: View {
         }
     }
 }
-
 
 #Preview {
     UNGoals()
