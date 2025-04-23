@@ -8,8 +8,10 @@
 import CoreLocation
 import SwiftUI
 import UIKit
+import SwiftData
 
 struct ContentView: View {
+    @Environment(\.modelContext) var context
     var body: some View {
         NavigationStack {
             ZStack {
@@ -52,14 +54,21 @@ struct ContentView: View {
                             .padding(20)
 
                         NavigationLink("Quiz") {
-                            Quiz(question: Question.allQuestions[0])
+                            Quiz(context: context, question: Question.allQuestions[0])
                         }.padding(20)
+                        NavigationLink("Scores") { ScoreView() }.padding(20)
                     }
                 }
+            }.task {
+                await notify()
             }
-
         }
     }
+}
+
+func notify() async {
+    await notificationPermission()
+    await scheduleNotification(title: "You haven't Logged in today", body: "Login today to continue your streak")
 }
 
 #Preview {

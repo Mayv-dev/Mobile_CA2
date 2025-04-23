@@ -11,7 +11,7 @@ import SwiftUI
 struct mobile_CA2App: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
         }
         .modelContainer(for: Score.self)
     }
